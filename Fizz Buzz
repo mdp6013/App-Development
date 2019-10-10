@@ -1,0 +1,30 @@
+/: Playground - noun: a place where people can play
+
+import UIKit
+
+//var str = "Hello, playground"
+
+var numberRange = [Int]()
+for i in 1 ... 105 {
+   numberRange.append(i)
+    }
+
+for num in numberRange {
+    if ((num % 3 == 0) && (num % 5 == 0) && (num % 7 == 0)){
+         print ("\(num) Fizz Buzz Bang")
+    }else if (num % 15 == 0){
+        print ("\(num) Fizz Buzz")
+        
+    } else if (num % 3 == 0) {
+        print ("\(num) Fizz")
+        
+    } else if (num % 5 == 0){
+        print ("\(num) Buzz")
+        
+    } else if (num % 7 == 0){
+        print ("\(num) Bang")
+        
+    } else {
+        print (num)
+    }
+}
